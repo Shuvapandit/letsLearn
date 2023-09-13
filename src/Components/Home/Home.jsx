@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import homeimg from "../../assets/Lottiefiles/home.json";
 import homecss from "./Home.module.css";
 import AboutUs from "../../AboutUs/AboutUs";
+import CourseFeatures from "../../CourseFeatures/CourseFeatures";
 const Home = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Home = () => {
             {/*   home text side start */}
             <div className=" lg:w-1/2  lg:mt-56 sm:mt-5 lg:ml-24  ">
               <div className={homecss.mfsmandmd}>
-                <p className="text-3xl font-bold ">
+                <p className="text-5xl font-bold ">
                   Want to <span className="text-purple-600">learn</span>
                 </p>
                 {/* typewriter start */}
@@ -33,7 +34,7 @@ const Home = () => {
                 </div>
                 {/* typewriter end */}
 
-                <p className="lg:whitespace-nowrap">
+                <p className="lg:whitespace-nowrap font-medium">
                   We make programming simple & easy to understand.
                 </p>
                 <div className="mt-3">
@@ -46,16 +47,16 @@ const Home = () => {
             </div>
             {/*   home text side end */}
             {/*   home image side start */}
-            <div className="lg:w-1/2 sm:w-full ">
-              <div className="  lg:ml-34  ">
-                <Lottie className="" animationData={homeimg} />
+            <div className="lg:w-1/2  ">
+              <div className="  lg:ml-34 ">
+                <Lottie className="h-96 lg:h-full sm:h-96" animationData={homeimg} />
               </div>
             </div>
             {/*   home image side start */}
           </div>
         </div>
 
-        <AboutUs />
+       <CourseFeatures/>
       </div>
     </>
   );

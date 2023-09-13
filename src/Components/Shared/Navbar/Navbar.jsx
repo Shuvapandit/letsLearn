@@ -29,18 +29,20 @@ const Navbar = () => {
           <a>Home</a>
         </li>
       </Link>
+      <Link to="/coursefeatures">
+      <li>
+        <a>Course Features</a>
+      </li>
+      </Link>
+      <li>
+        <a>Course Details</a>
+      </li>
       <Link to="/aboutus">
         {" "}
         <li>
           <a>About Us</a>
         </li>
       </Link>
-      <li>
-        <a>Courses</a>
-      </li>
-      <li>
-        <a>Course Details</a>
-      </li>
     </>
   );
   return (
