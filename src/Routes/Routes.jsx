@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home />,
       },
       {
@@ -16,6 +16,5 @@ export const router = createBrowserRouter([
         element: <AboutUs />,
       },
     ],
-      
   },
 ]);

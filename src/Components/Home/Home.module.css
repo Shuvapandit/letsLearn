@@ -1,0 +1,12 @@
+.grd {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 128, 0.3)
+  );
+}
+@media only screen and (max-width: 600px) {
+  .mfsmandmd {
+    text-align: center;
+  }
+}

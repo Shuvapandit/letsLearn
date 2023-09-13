@@ -1,1 +1,1 @@
-## Tailwind,Daisy Ui,React vite,React Router, AOS
+## Tailwind,Daisy Ui,React vite,React Router, AOS, lottie-react ,typewriter-effect
