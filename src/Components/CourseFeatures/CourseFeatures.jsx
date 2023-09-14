@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import img1 from "../../src/assets/images/coursefeatimg/cfimg1.svg";
-import img2 from "../../src/assets/images/coursefeatimg/video.png";
-import img3 from "../../src/assets/images/coursefeatimg/digitalization.png";
-import img4 from "../../src/assets/images/coursefeatimg/choose.png";
-import img5 from "../../src/assets/images/coursefeatimg/web-development.png";
-import img6 from "../../src/assets/images/coursefeatimg/networking.png";
-import img7 from "../../src/assets/images/coursefeatimg/project-management.png";
+import img1 from "../../assets/images/coursefeatimg/cfimg1.svg"
+import img2 from "../../assets/images/coursefeatimg/video.png";
+import img3 from "../../assets/images/coursefeatimg/digitalization.png";
+import img4 from "../../assets/images/coursefeatimg/choose.png";
+import img5 from "../../assets/images/coursefeatimg/web-development.png";
+import img6 from "../../assets/images/coursefeatimg/networking.png";
+import img7 from "../../assets/images/coursefeatimg/project-management.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const CourseFeatures = () => {
