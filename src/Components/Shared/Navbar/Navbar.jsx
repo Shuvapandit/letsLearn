@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import logo from "../../../assets/images/navimg/logo.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const navbarStyle = {
-    backgroundColor: "rgba(0, 0, 0, 0)", // Transparent background color
-  };
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -31,12 +28,15 @@ const Navbar = () => {
       </Link>
       <Link to="/coursefeatures">
       <li>
-        <a>Course Features</a>
+        <a>CourseFeatures</a>
       </li>
       </Link>
+      <Link to="/coursemodule">
       <li>
-        <a>Course Details</a>
+        <a>CourseModules</a>
       </li>
+      </Link>
+     
       <Link to="/aboutus">
         {" "}
         <li>
@@ -47,8 +47,8 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className=" sticky top-0 z-50 border-b-2">
-        <div className="navbar   " style={navbarStyle}>
+      <div className=" sticky backdrop-blur top-0 z-50 border-b-2">
+        <div className="navbar   " >
           <div className="navbar-start">
             <div className="">
               <img src={logo} width={"35px"} height={"35px"} />

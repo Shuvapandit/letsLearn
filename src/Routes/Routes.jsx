@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import Home from "../Components/Home/Home";
 import AboutUs from "../AboutUs/AboutUs";
 import CourseFeatures from "../CourseFeatures/CourseFeatures";
+import CourseModule from "../Components/Home/CourseModule/CourseModule";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/coursefeatures",
         element: <CourseFeatures />,
+      },
+      {
+        path: "/coursemodule",
+        element: <CourseModule />,
       },
     ],
   },

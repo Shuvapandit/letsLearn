@@ -1,0 +1,9 @@
+
+.vertical-timeline::before {
+    background-color: #4b0082; 
+}
+.timeline-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  

@@ -1,1 +1,2 @@
-## Tailwind,Daisy Ui,React vite,React Router, AOS, lottie-react ,typewriter-effect
+## Pros and Crons of this Project
+### Tailwind,Daisy Ui,React vite,React Router, AOS, lottie-react ,typewriter-effect,react-vertical-timeline-component,react icons

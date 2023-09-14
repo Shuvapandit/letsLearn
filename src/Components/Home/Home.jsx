@@ -5,6 +5,7 @@ import homeimg from "../../assets/Lottiefiles/home.json";
 import homecss from "./Home.module.css";
 import AboutUs from "../../AboutUs/AboutUs";
 import CourseFeatures from "../../CourseFeatures/CourseFeatures";
+import CourseModule from "./CourseModule/CourseModule";
 const Home = () => {
   return (
     <>
@@ -57,6 +58,7 @@ const Home = () => {
         </div>
 
        <CourseFeatures/>
+       <CourseModule/>
       </div>
     </>
   );
