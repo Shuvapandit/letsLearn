@@ -63,9 +63,8 @@ const Navbar = () => {
             {/* login part start  */}
             <div className=" ">
               <ul className="menu menu-horizontal px-1">
-                <li>
-                  <a>LOGIN</a>
-                </li>
+              
+                <Link to="/login"><li><a>LOGIN</a></li></Link>
               </ul>
             </div>
             {/*  login part end */}
