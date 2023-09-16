@@ -1,12 +1,15 @@
 import React from "react";
-import { DiGithubBadge } from "react-icons/di";
 import {
   AiFillLinkedin,
   AiOutlineMail,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { FaDiscord } from "react-icons/fa";
-import { BsTelegram, BsTelephoneForward } from "react-icons/Bs";
+import {
+  BsDiscord,
+  BsGithub,
+  BsTelegram,
+  BsTelephoneForward,
+} from "react-icons/Bs";
 import { CiLocationOn } from "react-icons/ci";
 const Footer = () => {
   return (
@@ -59,12 +62,12 @@ const Footer = () => {
                 href="https://github.com/Shuvapandit?tab=repositories"
                 target="_blank"
               >
-                <DiGithubBadge className="w-7 h-7" />
+                <BsGithub className="w-7 h-7" />
               </a>
             </div>
             <div>
               <a href="https://discord.gg/EpRx3G6e" target="_blank">
-                <FaDiscord className="w-7 h-7" />
+                <BsDiscord className="w-7 h-7" />
               </a>
             </div>
             <div>

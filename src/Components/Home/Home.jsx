@@ -5,6 +5,7 @@ import homeimg from "../../assets/Lottiefiles/home.json";
 import homecss from "./Home.module.css";
 import CourseModule from "./CourseModule/CourseModule";
 import CourseFeatures from "../CourseFeatures/CourseFeatures";
+import Faq from "./FAQ/Faq";
 const Home = () => {
   return (
     <>
@@ -49,16 +50,19 @@ const Home = () => {
             {/*   home image side start */}
             <div className="lg:w-1/2  ">
               <div className="  lg:ml-34 ">
-                <Lottie className="h-96 lg:h-full sm:h-96" animationData={homeimg} />
+                <Lottie
+                  className="h-96 lg:h-full sm:h-96"
+                  animationData={homeimg}
+                />
               </div>
             </div>
             {/*   home image side start */}
           </div>
         </div>
 
-       <CourseFeatures/>
-       <CourseModule/>
-      
+        <CourseFeatures />
+        <CourseModule />
+        <Faq />
       </div>
     </>
   );

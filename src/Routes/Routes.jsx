@@ -5,6 +5,7 @@ import CourseModule from "../Components/Home/CourseModule/CourseModule";
 import CourseFeatures from "../Components/CourseFeatures/CourseFeatures";
 import LogIn from "../Components/Shared/LogIn/Login";
 import SignUp from "../Components/Shared/SignUp/SignUp";
+import Enroll from "../Components/EnrollmentPages/Enroll/Enroll";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <LogIn />,
+      },
+      {
+        path: "/enroll",
+        element: <Enroll />,
       },
       {
         path: "/signup",

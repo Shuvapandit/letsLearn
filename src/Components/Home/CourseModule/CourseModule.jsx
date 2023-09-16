@@ -42,7 +42,7 @@ const CourseModule = () => {
       {/*  course Modules 2nd part start */}
       <div className="lg:flex lg:flex-row lg:mr-12 lg:ml-12 ml-5 mr-5 sm:mr-5 mb-5">
         <div className="lg:w-2/5  ">
-          <div className=" mt-20  " data-aos="flip-right">
+          <div className=" mt-20  " data-aos="zoom-in-down">
             <Lottie className="h-96  lg:h-full sm:h-96" animationData={img2} />
           </div>
         </div>

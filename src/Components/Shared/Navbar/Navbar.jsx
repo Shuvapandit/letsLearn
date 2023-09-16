@@ -27,28 +27,28 @@ const Navbar = () => {
         </li>
       </Link>
       <Link to="/coursefeatures">
-      <li>
-        <a>CourseFeatures</a>
-      </li>
+        <li>
+          <a>CourseFeatures</a>
+        </li>
       </Link>
       <Link to="/coursemodule">
-      <li>
-        <a>CourseModules</a>
-      </li>
+        <li>
+          <a>CourseModules</a>
+        </li>
       </Link>
-     
-{/*       <Link to="/aboutus">
+      {/*       <Link to="/aboutus">
         {" "}
         <li>
           <a>About Us</a>
         </li>
       </Link>
- */}    </>
+ */}{" "}
+    </>
   );
   return (
     <>
       <div className=" sticky backdrop-blur top-0 z-50 border-b-2">
-        <div className="navbar   " >
+        <div className="navbar   ">
           <div className="navbar-start">
             <div className="">
               <img src={logo} width={"35px"} height={"35px"} />
@@ -58,13 +58,24 @@ const Navbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="gap-3 menu-horizontal px-1">{navitems}</ul>
           </div>
-
           <div className="navbar-end">
             {/* login part start  */}
-            <div className=" ">
-              <ul className="menu menu-horizontal px-1">
-              
-                <Link to="/login"><li><a>LOGIN</a></li></Link>
+            <div className="mr-3 ">
+              <ul className="btn-neutral rounded-full px-5 py-1 ">
+                <Link to="/login">
+                  <li>
+                    <a>LogIn</a>
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <div className="mr-3 ">
+              <ul className=" bg-purple-600 text-white rounded-full px-5 py-1 ">
+                <Link to="/enroll">
+                  <li>
+                    <a>Enroll</a>
+                  </li>
+                </Link>
               </ul>
             </div>
             {/*  login part end */}
