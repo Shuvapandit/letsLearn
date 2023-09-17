@@ -29,7 +29,7 @@ const CourseModule = () => {
         className="flex justify-center items-center mb-5"
         data-aos="zoom-in-up"
       >
-        <img src={img1} height={"50px"} width={"50px"} />
+        <img src={img1} height={"100px"} width={"100px"} />
       </div>
       <p className="text-center text-3xl font-bold">
         How Will This Course <span className="text-purple-600">Modules </span>{" "}
@@ -46,8 +46,8 @@ const CourseModule = () => {
             <Lottie className="h-96  lg:h-full sm:h-96" animationData={img2} />
           </div>
         </div>
-        <div className="lg:w-3/5 w-full sm:w-full mt-10">
-          <div className="  overflow-auto p-4 mx-16  h-96 text-justify ">
+        <div className="lg:w-3/5 w-full sm:w-full mt-10 ">
+          <div className="  overflow-auto p-4 lg:mx-16 mx-2 sm:mx-2 h-96 text-justify ">
             <VerticalTimeline layout="1-column">
               <VerticalTimelineElement
                 date="4+ Hour Video, 2 Assignments"

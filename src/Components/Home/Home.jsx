@@ -6,6 +6,7 @@ import homecss from "./Home.module.css";
 import CourseModule from "./CourseModule/CourseModule";
 import CourseFeatures from "../CourseFeatures/CourseFeatures";
 import Faq from "./FAQ/Faq";
+import Prerequisites from "./Prerequisites/Prerequisites";
 const Home = () => {
   return (
     <>
@@ -62,6 +63,7 @@ const Home = () => {
 
         <CourseFeatures />
         <CourseModule />
+        <Prerequisites/>
         <Faq />
       </div>
     </>

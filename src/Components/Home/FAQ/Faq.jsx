@@ -26,7 +26,7 @@ const Faq = () => {
           </p>
         </div>
         {/*  FAQ part two  */}
-        <div className="lg:w-1/2 overflow-auto p-4 mx-16  h-96 text-justify ">
+        <div className="lg:w-1/2 overflow-auto p-4 lg:mx-16 mx-2 sm:mx-2  h-96 text-justify ">
           <div className="collapse collapse-arrow hover:bg-purple-600  hover:text-white">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-lg font-medium">

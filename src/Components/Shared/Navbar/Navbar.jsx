@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const navitems = (
     <>
-      <Link to="/home">
+      <Link to="/">
         <li>
           <a>Home</a>
         </li>
@@ -51,10 +51,15 @@ const Navbar = () => {
         <div className="navbar   ">
           <div className="navbar-start">
             <div className="">
+            <Link to="/">
               <img src={logo} width={"35px"} height={"35px"} />
+              </Link>
             </div>
-            <a className=" normal-case text-xl">LetsLearn</a>
+            <Link to="/">
+            <a className="normal-case lg:text-xl text-sm sm:text-sm">LetsLearn</a>
+            </Link>
           </div>
+          
           <div className="navbar-center hidden lg:flex">
             <ul className="gap-3 menu-horizontal px-1">{navitems}</ul>
           </div>
