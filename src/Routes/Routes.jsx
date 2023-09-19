@@ -6,6 +6,7 @@ import CourseFeatures from "../Components/CourseFeatures/CourseFeatures";
 import LogIn from "../Components/Shared/LogIn/Login";
 import SignUp from "../Components/Shared/SignUp/SignUp";
 import Enroll from "../Components/EnrollmentPages/Enroll/Enroll";
+import CourseAccess from "../Components/Shared/CourseAccess/CourseAccess";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/courseaccess",
+        element: <CourseAccess />,
       },
     ],
   },

@@ -36,13 +36,12 @@ const Navbar = () => {
           <a>CourseModules</a>
         </li>
       </Link>
-      {/*       <Link to="/aboutus">
-        {" "}
+      <Link to="/courseaccess">
         <li>
-          <a>About Us</a>
+          <a>Course Access</a>
         </li>
       </Link>
- */}{" "}
+     
     </>
   );
   return (
