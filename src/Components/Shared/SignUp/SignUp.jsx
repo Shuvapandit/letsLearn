@@ -1,7 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import loginimg from "../../../assets/images/Loginimg/login.webp";
+import { UsersauthContext } from "../Userscontext/UsersContext";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const SignUp = () => {
+  const navigate = useNavigate();
+  const { user, createUser } = useContext(UsersauthContext);
+  const signuphandle = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    createUser(email, password)
+      .then((result) => {
+        const loogedUser = result.user;
+        toast.success("SignUp Successful! Welcome to LetsLearn!");
+        form.reset();
+        // Redirect to the course access page
+        navigate("/courseaccess");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="lg:flex lg:flex-row">
       <div className="lg:w-3/6 sm:w-full">
@@ -12,7 +35,12 @@ const SignUp = () => {
             </h2>
           </div>
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form
+              onSubmit={signuphandle}
+              className="space-y-6"
+              action="#"
+              method="POST"
+            >
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -41,7 +69,7 @@ const SignUp = () => {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Login
+                  SignUp
                 </button>
               </div>
             </form>
@@ -60,6 +88,7 @@ const SignUp = () => {
       <div className="lg:w-3/6">
         <img className="h-full " src={loginimg} alt="Login" />
       </div>
+      <ToastContainer />
     </div>
   );
 };

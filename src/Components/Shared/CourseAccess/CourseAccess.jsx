@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 function CourseAccess() {
- const [selectedVideo, setSelectedVideo] = useState(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
   const videoList = [
     {
       title: "HTML Tutorial for Beginners: HTML Crash Course",

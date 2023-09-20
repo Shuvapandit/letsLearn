@@ -1,7 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import logo from "../../../assets/images/navimg/logo.png";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
+import { UsersauthContext } from "../Userscontext/UsersContext";
 const Navbar = () => {
+  const { user, logOut } = useContext(UsersauthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        // Show a success toast message
+        toast.success("Logout successful");
+      })
+
+      .catch((error) => {
+        toast.error("Logout unsuccessful. Please try again.");
+        console.log(error);
+      });
+  };
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -36,11 +53,13 @@ const Navbar = () => {
           <a>CourseModules</a>
         </li>
       </Link>
-      <Link to="/courseaccess">
-        <li>
-          <a>Course Access</a>
-        </li>
-      </Link>
+         {user && (
+        <Link to="/courseaccess">
+          <li>
+            <a>Course Access</a>
+          </li>
+        </Link>
+      )}
      
     </>
   );
@@ -62,16 +81,18 @@ const Navbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="gap-3 menu-horizontal px-1">{navitems}</ul>
           </div>
-          <div className="navbar-end">
-            {/* login part start  */}
-            <div className="mr-3 ">
-              <ul className="btn-neutral rounded-full px-5 py-1 ">
-                <Link to="/login">
-                  <li>
-                    <a>LogIn</a>
-                  </li>
-                </Link>
-              </ul>
+          <div className="navbar-end flex items-center">
+            <div className="mr-3">
+                {user ? (
+                  <ul className="btn-neutral rounded-full lg:px-5 lg:py-1 px-3 py-1">
+                   <Link to="/"> <a  onClick={handleLogOut}>LogOut</a></Link> 
+                   </ul>
+                ) : (
+                   <ul className="btn-neutral rounded-full px-5 py-1">
+                   <Link to="/login"> <a>LogIn</a></Link> 
+                   </ul>
+                )}
+              <ToastContainer />
             </div>
             <div className="mr-3 ">
               <ul className=" bg-purple-600 text-white rounded-full px-5 py-1 ">
