@@ -1,6 +1,6 @@
 # LetsLearn
 
-## Live link of our Project: https://letslearn-5ba29.web.app/home
+## Live link of our Project: https://letslearn-5ba29.web.app
 
 # About our Project
 
